@@ -4775,7 +4775,7 @@ body {
   font-family: Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #000;
+  color: #333;
   background-color: #fff; }
 
 a {
@@ -4816,7 +4816,7 @@ h6,
   font-weight: 400;
   line-height: 1.1;
   color: inherit;
-  color: #000; }
+  color: #333; }
 
 p {
   margin: 0 0 20px; }
@@ -7871,22 +7871,22 @@ h1,
 .h1 {
   font-size: 26px;
   line-height: 30px;
-  color: #333;
   margin-top: 0;
   font-weight: bold;
   margin-bottom: 40px; }
 
+h3,
+.h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
 @media (max-width: 767px) {
   h1,
   .h1 {
-    font-size: 26px;
-    line-height: 30px; }
-  h2,
-  .h2 {
-    font-size: 24px; }
-  h3,
-  .h3 {
-    font-size: 21px; } }
+    /* font-size: 26px;
+    line-height: 30px;*/ } }
 
 .form-captcha__image,
 .form-captcha__reload,
@@ -9320,6 +9320,12 @@ h2 + hr,
   background-size: 4761.90476% 4761.90476%;
   background-position: 8.06946% 0%; }
 
+.icon-pdf {
+  width: 53px;
+  height: 54px;
+  background-size: 1886.79245% 1851.85185%;
+  background-position: 0% 15.4334%; }
+
 .header__search .form-control {
   padding: 5px 15px;
   border: none; }
@@ -9857,3 +9863,136 @@ h2 + hr,
         background: #00b7f4; }
         .catalog__item a:hover p:before {
           background: #fff; }
+
+.breadcrumbs {
+  list-style: none;
+  padding-left: 0;
+  margin: -35px 0 30px -5px; }
+  .breadcrumbs li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    font-size: 12px; }
+    .breadcrumbs li a,
+    .breadcrumbs li span {
+      color: #333; }
+    .breadcrumbs li a:hover {
+      text-decoration: none;
+      color: #00b7f4; }
+    .breadcrumbs li:after {
+      content: '/'; }
+    .breadcrumbs li:last-of-type:after {
+      display: none; }
+
+.catalog-category {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 45px; }
+  .catalog-category li {
+    border: 2px solid #00b7f4;
+    border-bottom: none; }
+    .catalog-category li:last-of-type {
+      border-bottom: 2px solid #00b7f4; }
+    .catalog-category li a {
+      display: block;
+      min-height: 76px;
+      padding: 30px 50px;
+      position: relative;
+      overflow: hidden;
+      background: #16314a;
+      -webkit-transition: background-color .3s ease;
+      transition: background-color .3s ease;
+      text-decoration: none; }
+      .catalog-category li a img {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        left: 0;
+        top: 0;
+        opacity: .5; }
+      .catalog-category li a p {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 2; }
+      .catalog-category li a:hover {
+        background: #00b7f4; }
+
+.block-text {
+  margin-bottom: 40px; }
+
+.marked-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 40px; }
+  .marked-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px; }
+    .marked-list li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      background: #00b7f4;
+      border-radius: 50%; }
+
+.download-block__main {
+  position: relative;
+  min-height: 160px;
+  background-position: center; }
+  .download-block__main:before {
+    content: '';
+    background: url(../img/preface/pattern.png) repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+  .download-block__main p {
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    margin-bottom: 0;
+    left: 0;
+    background: rgba(22, 49, 74, 0.3);
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 26px;
+    z-index: 3; }
+    .download-block__main p span {
+      font-size: 40px;
+      font-weight: normal; }
+    .download-block__main p b {
+      font-size: 35px; }
+
+.download-block__links {
+  background: #16314a;
+  padding: 15px 50px 0; }
+  .download-block__links a {
+    margin-right: 40px;
+    margin-bottom: 10px; }
+
+.download {
+  margin-left: 70px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 5px 0 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-style: italic;
+  min-height: 54px; }
+  .download:hover, .download:focus {
+    text-decoration: none; }
+  .download i {
+    position: absolute;
+    left: -70px;
+    top: 0; }
