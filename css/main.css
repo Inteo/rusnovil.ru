@@ -9945,7 +9945,7 @@ h2 + hr,
 .download-block__main {
   position: relative;
   min-height: 160px;
-  background-position: center; }
+  background-position: center 0; }
   .download-block__main:before {
     content: '';
     background: url(../img/preface/pattern.png) repeat;
@@ -9996,3 +9996,39 @@ h2 + hr,
     position: absolute;
     left: -70px;
     top: 0; }
+
+.consult {
+  position: relative;
+  min-height: 180px;
+  background-color: #16314a;
+  overflow: hidden; }
+  .consult img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .6;
+    min-height: 100%; }
+  .consult:before {
+    content: '';
+    background: url(../img/preface/pattern.png) repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3; }
+  .consult__content {
+    position: relative;
+    z-index: 4;
+    padding: 25px 40px 40px;
+    color: #fff;
+    max-width: 400px; }
+  .consult__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px; }
+  .consult__text {
+    margin-bottom: 25px; }
+  .consult a {
+    white-space: normal; }
