@@ -2,11 +2,11 @@ $(document).ready(function() {
   $(".header__search-toggle").click(function(){
     $(".header__search").addClass("active");
     return false;
-  })
+  });
   $(".header__search-form .close").click(function(){
     $(".header__search").removeClass("active");
     return false;
-  })
+  });
 });
 
 ; /* Start:"a:4:{s:4:"full";s:66:"/bitrix/templates/inteo_corporation/f/js/common.js?149794961628557";s:6:"source";s:50:"/bitrix/templates/inteo_corporation/f/js/common.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
