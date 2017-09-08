@@ -7,6 +7,25 @@ $(document).ready(function() {
     $(".header__search").removeClass("active");
     return false;
   });
+  $(".switcher__btn").click(function(){
+    $(this).closest(".switcher__control").find(".switcher__btn").removeClass("active");
+    $(this).addClass("active");
+    var holder = $(this).closest(".switcher").find(".switcher__holder");
+    holder.removeClass("active");
+    holder.filter('[data-switch-hold='+$(this).data("switch-btn")+']').addClass("active");
+    return false;
+  });
+  $(".goods-marking__control li span").mouseover(function(){
+      var holder = $(this).closest(".goods-marking").find(".goods-marking__description li");
+      holder.filter('[data-mark-target='+$(this).data("mark-btn")+']').addClass("active");
+    }).mouseout(function(){
+      $(this).closest(".goods-marking").find(".goods-marking__description li").removeClass("active");
+  });
+  var maxHeight = Math.max.apply(null, $(".more-goods ul li").map(function ()
+  {
+    return $(this).height();
+  }).get());
+  $(".more-goods ul").height(maxHeight);
 });
 
 ; /* Start:"a:4:{s:4:"full";s:66:"/bitrix/templates/inteo_corporation/f/js/common.js?149794961628557";s:6:"source";s:50:"/bitrix/templates/inteo_corporation/f/js/common.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/

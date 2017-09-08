@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta content='true' name='HandheldFriendly' />
+  <meta content='width' name='MobileOptimized' />
+  <meta content='yes' name='apple-mobile-web-app-capable' />
+  <title>Project</title>
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" media="screen">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="panel"></div>
+  <div class="mobile-holder"></div>
+  <header class="header header-container clearfix">
+    <div class="header__info">
+      <div class="container">
+        <div class="header__info-wrap">
+          <div class="header__search">
+            <i class="icon-lens-white header__search-toggle"></i>
+            <div class="header__search-form">
+              <i class="icon-lens-grey"></i>
+              <form action="" class="">
+                <input type="text" class="form-control" placeholder="Поиск">
+                <div class="close"></div>
+              </form>
+            </div>
+          </div>
+          <div class="header__contacts">
+            <div class="phones">
+              <div class="phones__item">
+                <span class="phones__number"><i class="icon-smart"></i>+7 (4852) 33-25-85</span>
+              </div>
+              <div class="phones__callback">
+                <a class="modal-form btn btn_light">Заказать
+                  обратный звонок</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__main">
+      <div class="container">
+        <div class="header__holder">
+          <div class="header__mobile">
+            <button class="main-menu-toggle menu-toggle" aria-controls="main-menu" aria-expanded="false"><span
+              class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></button>
+          </div>
+          <div class="header__logo">
+            <div class="logo">
+              <a href="/">&nbsp;</a>
+            </div>
+          </div>
+          <div class="header__menu">
+            <ul class="nav navbar-nav navbar_header" id="main-menu">
+              <li id="menu-item-1" class="menu-item menu-item-has-children"><a href="/about/" class="root-item">О компании</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-2" class="menu-item"><a href="/about/news/">Новости</a></li>
+                  <li id="menu-item-3" class="menu-item"><a href="/about/history/">История</a></li>
+                  <li id="menu-item-4" class="menu-item"><a href="/about/staff/">Сотрудники</a></li>
+                  <li id="menu-item-5" class="menu-item"><a href="/about/certificates/">Сертификаты</a></li>
+                  <li id="menu-item-6" class="menu-item"><a href="/about/partners/">Партнеры</a></li>
+                  <li id="menu-item-7" class="menu-item"><a href="/about/responses/">Отзывы</a></li>
+                  <li id="menu-item-8" class="menu-item"><a href="/about/vacancies/">Вакансии</a></li>
+                  <li id="menu-item-9" class="menu-item"><a href="/about/requisites/">Реквизиты</a></li>
+                </ul>
+              </li>
+              <li id="menu-item-10" class="menu-item active"><a href="/services/" class="root-item">Услуги</a></li>
+              <li id="menu-item-11" class="menu-item"><a href="/projects/" class="root-item">Проекты</a></li>
+              <li id="menu-item-12" class="menu-item menu-item-has-children"><a href="/catalog/" class="root-item">Каталог</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-13" class="menu-item menu-item-has-children"><a href="/catalog/sadovaya-tekhnika/"
+                                                                                    class="parent">Садовая техника</a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-14" class="menu-item"><a href="/catalog/sadovaya-tekhnika/vodyanye-nasosy/">Водяные
+                        насосы</a></li>
+                      <li id="menu-item-15" class="menu-item"><a href="/catalog/sadovaya-tekhnika/motobloki-i-kultivatory/">Мотоблоки,
+                        культиваторы</a></li>
+                      <li id="menu-item-16" class="menu-item"><a href="/catalog/sadovaya-tekhnika/snegouborshchiki/">Снегоуборщики</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu-item-17" class="menu-item menu-item-has-children"><a href="/catalog/vse-dlya-remonta/"
+                                                                                    class="parent">Все для ремонта</a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-18" class="menu-item"><a
+                        href="/catalog/vse-dlya-remonta/shurupoverty/">Шуруповерты</a></li>
+                      <li id="menu-item-19" class="menu-item"><a href="/catalog/vse-dlya-remonta/perforatory/">Перфораторы</a>
+                      </li>
+                      <li id="menu-item-20" class="menu-item"><a href="/catalog/vse-dlya-remonta/frezery/">Фрезеры</a></li>
+                    </ul>
+                  </li>
+                  <li id="menu-item-21" class="menu-item"><a href="/catalog/velosipedy/">Велосипеды</a></li>
+                  <li id="menu-item-22" class="menu-item"><a href="/catalog/gps-navigatory/">GPS-навигаторы</a></li>
+                  <li id="menu-item-23" class="menu-item"><a href="/catalog/kaminy-i-pechi/">Камины и печи</a></li>
+                  <li id="menu-item-24" class="menu-item"><a href="/catalog/vse-dlya-ofisa/">Все для офиса</a></li>
+                </ul>
+              </li>
+              <li id="menu-item-25" class="menu-item menu-item-has-children"><a href="/info/" class="root-item">Информация</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-26" class="menu-item"><a href="/info/page/">Оформление</a></li>
+                  <li id="menu-item-27" class="menu-item"><a href="/info/buttons/">Кнопки</a></li>
+                  <li id="menu-item-28" class="menu-item"><a href="/info/icons/">Иконки</a></li>
+                </ul>
+              </li>
+              <li id="menu-item-29" class="menu-item"><a href="/contacts/" class="root-item">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="body">
+    <div class="container">
+      <div class="main-content">
+        <div class="catalog-menu">
+          <ul>
+            <li class="active">
+              <a href="#">Транспортёрные ленты</a>
+              <ul>
+                <li class="active">
+                  <a href="#">Резинотканевая</a>
+                  <ul>
+                    <li><a href="#">Маслостойкая</a></li>
+                    <li><a href="#">Морозостойкая</a></li>
+                    <li><a href="#">Теплостойкая</a></li>
+                    <li><a href="#">Общего назначения</a></li>
+                    <li><a href="#">Пищевая</a></li>
+                    <li><a href="#">Шевронная</a></li>
+                    <li><a href="#">Лента ПВХ, PU</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Лента ПВХ, PU</a></li>
+                <li><a href="#">Шевронная</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Экспандеры</a></li>
+            <li><a href="#">Ремни</a></li>
+            <li><a href="#">Смеси резиновые</a></li>
+            <li><a href="#">Рукава</a></li>
+            <li><a href="#">Ткани прорезиненные </a></li>
+            <li><a href="#">Клей резиновый</a></li>
+            <li><a href="#">Техническая пластина</a></li>
+            <li><a href="#">Кольца резиновые</a></li>
+            <li><a href="#">Продукция медицинского
+              назначения</a></li>
+            <li><a href="#">Плиты животноводческие</a></li>
+          </ul>
+        </div>
+        <div class="main-holder">
+          <ul class="breadcrumbs">
+            <li><a href="/">Главная страница</a>
+            </li><li><a href="#">Каталог</a>
+            </li><li><a href="#">Транспортёрные ленты</a>
+            </li><li><a href="#">Резинотканевая лента</a>
+            </li><li><a href="#">Морозостойкая лента</a>
+            </li><li><span>4ПМ-(500-1600)-2ТК200-2-1-1 (МБС)</span></li>
+          </ul>
+          <h1>Морозостойкая транспортёрная лента 4ПМ-(500-1600)-2ТК200-2-1-1 (МБС)</h1>
+          <div class="goods">
+            <div class="goods__main">
+              <div class="goods__img">
+                <img src="img/goods/2.jpg" alt="">
+              </div>
+              <div class="goods__info">
+                <p class="goods__description">Лента конвейерная для тяжелых условий эксплуатации, морозостойкая.</p>
+                <div class="goods__detail">
+                  <p><i class="icon-check"></i>Есть в наличии</p>
+                  <p><i class="icon-setting"></i>Возможно изготовение лент
+                    по индивидуальным параметрам</p>
+                </div>
+                <p class="goods__price">От <b>1 800</b> руб/м<sup>2</sup></p>
+                <a href="#" class="btn">Заказать</a>
+              </div>
+            </div>
+            <div class="advantages">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="advantages__item">
+                    <div class="advantages__item-image"><i class="icon-warranty"></i></div>
+                    <div class="advantages__item-text">Гарантия на все конвейерные ленты 24 месяца</div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="advantages__item">
+                    <div class="advantages__item-image"><i class="icon-car"></i></div>
+                    <div class="advantages__item-text">Доставка на следующий день после оплаты </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="switcher">
+              <div class="switcher__control">
+                <div class="switcher__btn active" data-switch-btn="gs1">Характеристики</div>
+                <div class="switcher__btn" data-switch-btn="gs2">Модификация</div>
+                <div class="switcher__btn" data-switch-btn="gs3">Применение</div>
+              </div>
+              <div class="switcher__wrap">
+                <div class="switcher__holder active" data-switch-hold="gs1">
+                  <div class="goods__features">
+                    <p class="goods__features-title">Характеристики:</p>
+                    <ul>
+                      <li>
+                        <span>Вес:</span>
+                        <span>15,5 кг</span>
+                      </li>
+                      <li>
+                        <span>Длина:</span>
+                        <span>100 пм</span>
+                      </li>
+                      <li>
+                        <span>Ширина:</span>
+                        <span>900 мм</span>
+                      </li>
+                      <li>
+                        <span>Общая толщина:</span>
+                        <span>11,5 мм</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="switcher__holder" data-switch-hold="gs2">
+                  <div class="goods-nomenclature">
+                    <div class="goods-nomenclature__head">
+                      <div class="goods-nomenclature__cell">
+                        <p>Наименование</p>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        <p>Цена</p>
+                      </div>
+                      <div class="goods-nomenclature__cell"></div>
+                    </div>
+                    <a href="#" class="goods-nomenclature__item">
+                      <div class="goods-nomenclature__cell">
+                        <div class="goods-nomenclature__name">
+                          <div class="goods-nomenclature__img">
+                      <span>
+                        <img src="img/goods/nomenclature/1.jpg" alt="">
+                      </span>
+                          </div>
+                          4ПМ-(500-1600)-2ТК200-2-1-1 (МБС)
+                        </div>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        от 1 800 руб/м<sup>2</sup>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        <button class="btn">Выбрать</button>
+                      </div>
+                    </a>
+                    <a href="#" class="goods-nomenclature__item">
+                      <div class="goods-nomenclature__cell">
+                        <div class="goods-nomenclature__name">
+                          <div class="goods-nomenclature__img">
+                      <span>
+                        <img src="img/goods/nomenclature/1.jpg" alt="">
+                      </span>
+                          </div>
+                          4ПМ-(500-1600)-2ТК200-2-2-1 (МБС)
+                        </div>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        от 1 800 руб/м<sup>2</sup>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        <button class="btn">Выбрать</button>
+                      </div>
+                    </a>
+                    <a href="#" class="goods-nomenclature__item">
+                      <div class="goods-nomenclature__cell">
+                        <div class="goods-nomenclature__name">
+                          <div class="goods-nomenclature__img">
+                      <span>
+                        <img src="img/goods/nomenclature/1.jpg" alt="">
+                      </span>
+                          </div>
+                          2МС-(500-1200)-3-ТК-200-2-3-1-МС
+                        </div>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        от 1 800 руб/м<sup>2</sup>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        <button class="btn">Выбрать</button>
+                      </div>
+                    </a>
+                    <a href="#" class="goods-nomenclature__item">
+                      <div class="goods-nomenclature__cell">
+                        <div class="goods-nomenclature__name">
+                          <div class="goods-nomenclature__img">
+                      <span>
+                        <img src="img/goods/nomenclature/1.jpg" alt="">
+                      </span>
+                          </div>
+                          2МС-(500-1200)-3-ТК-200-2-5-2-МС
+                        </div>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        от 1 800 руб/м<sup>2</sup>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        <button class="btn">Выбрать</button>
+                      </div>
+                    </a>
+                    <a href="#" class="goods-nomenclature__item">
+                      <div class="goods-nomenclature__cell">
+                        <div class="goods-nomenclature__name">
+                          <div class="goods-nomenclature__img">
+                      <span>
+                        <img src="img/goods/nomenclature/1.jpg" alt="">
+                      </span>
+                          </div>
+                          2МС-(500-1200)-4-ТК-200-2-5-2-МС
+                        </div>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        от 1 800 руб/м<sup>2</sup>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        <button class="btn">Выбрать</button>
+                      </div>
+                    </a>
+                    <a href="#" class="goods-nomenclature__item">
+                      <div class="goods-nomenclature__cell">
+                        <div class="goods-nomenclature__name">
+                          <div class="goods-nomenclature__img">
+                      <span>
+                        <img src="img/goods/nomenclature/1.jpg" alt="">
+                      </span>
+                          </div>
+                          2МС-(500-1200)-5-ТК-200-2-5-2-МС
+                        </div>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        от 1 800 руб/м<sup>2</sup>
+                      </div>
+                      <div class="goods-nomenclature__cell">
+                        <button class="btn">Выбрать</button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="switcher__holder" data-switch-hold="gs3">
+                  <div class="goods__application">
+                    <p class="goods__application-title">Применение</p>
+                    <p>Транспортируемый материал—уголь, щебень, глина, металл, камень и другие материалы крупных фракций.</p>
+                    <p>Используют для укрытия площадей, изготовления резинотканевых прокладок и т.д.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-header">
+              <div class="h2">Обозначение</div>
+            </div>
+            <hr>
+            <div class="goods-marking">
+              <ul class="goods-marking__control">
+                <li><span data-mark-btn="gm1">2Т2</span></li>
+                <li><span data-mark-btn="gm2">1 000</span></li>
+                <li><span data-mark-btn="gm3">6</span></li>
+                <li><span data-mark-btn="gm4">ТК200-2</span></li>
+                <li><span data-mark-btn="gm5">6</span></li>
+                <li><span data-mark-btn="gm6">2</span></li>
+                <li><span data-mark-btn="gm7">РБ</span></li>
+              </ul>
+              <ul class="goods-marking__description">
+                <li data-mark-target="gm1"><span>2Т2</span> — тип ленты, теплостойкая</li>
+                <li data-mark-target="gm2"><span>1 000</span> — ширина, мм</li>
+                <li data-mark-target="gm3"><span>6</span> — колличество прокладок, шт.</li>
+                <li data-mark-target="gm4"><span>ТК200-2</span> — марка тканевых прокладок (разрывная нагрузка 200Н/мм)</li>
+                <li data-mark-target="gm5"><span>6</span> — толщина рабочей поверхности, мм</li>
+                <li data-mark-target="gm6"><span>2</span> — толщина нерабочей поверхности, мм</li>
+                <li data-mark-target="gm7"><span>РБ</span> — резиновый борт</li>
+              </ul>
+            </div>
+          </div>
+          <div class="goods-services">
+            <p class="goods-services__title">Услуги, которые мы оказываем</p>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="goods-services__ico">
+                    <i class="icon-gs1"></i>
+                  </div>
+                  <p>Стыковка лент</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="goods-services__ico">
+                    <i class="icon-gs2"></i>
+                  </div>
+                  <p>Резка РТИ в размер</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="goods-services__ico">
+                    <i class="icon-gs3"></i>
+                  </div>
+                  <p>Установка ковшей</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="goods-services__ico">
+                    <i class="icon-gs4"></i>
+                  </div>
+                  <p>Перфорация</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="consult">
+            <img src="img/consult.jpg" alt="">
+            <div class="consult__content">
+              <p class="consult__title">Остались вопросы?</p>
+              <p class="consult__text">Поможем подобрать полный комплект
+                нужных материалов и ответим на вопросы</p>
+              <a href="#" class="btn">Консультация специалиста</a>
+            </div>
+          </div>
+          <div class="more-goods">
+            <h2 class="more-goods__title">Сопутствующие товары</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="more-goods__img" style="background-image: url(img/goods/3.jpg)"></span>
+                  <span class="more-goods__name">Пищевая лента</span>
+                  <span class="more-goods__price">От <b>1 800</b> руб/м</span>
+                  <span class="more-goods__link">Подробнее</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="more-goods__img" style="background-image: url(img/goods/4.jpg)"></span>
+                  <span class="more-goods__name">Клей резиновый</span>
+                  <span class="more-goods__price">От <b>400</b> руб</span>
+                  <span class="more-goods__link">Подробнее</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="more-goods__img" style="background-image: url(img/goods/5.jpg)"></span>
+                  <span class="more-goods__name">Маслостойкая лента</span>
+                  <span class="more-goods__price">От <b>1 800</b> руб/м</span>
+                  <span class="more-goods__link">Подробнее</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="paginator">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer__logo">
+          <div class="logo">
+            <a href="/">&nbsp;</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer__menu">
+          <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Проекты</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Новости</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Каталог</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <form class="footer__search">
+          <i class="icon-lens"></i>
+          <input type="text" class="form-control" placeholder="Поиск">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer__info">
+    <div class="container">
+      <div class="footer__info-holder">
+        <div class="copyright">ООО «Ярославль—Инжиниринг» © 2017</div>
+        <div class="madeby">Разработка сайта — <a href="#">Интео</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  $(document).ready(function() {
+
+  });
+</script>
+</body>
+</html>
